@@ -48,7 +48,71 @@
         ?></li>
     
     </div>
+
+
+
+
+    <?php 
+        define("IVA",0.21);
+
+        $cursMatriu= array(
+            array("PHP","Introducció a PHP",15.5),
+            array("Laravel","Laravel per experts", 30),
+            array("Django","Dominant Django",10)
+        );
+
+        $array_num=count($cursMatriu);
+    ?>
+    <div>
+        <h1>Llista de cursos</h1>
+        <h2>Número de cursos apuntats: 3 </h2>
+    </div>
+    <div style="border:2px solid black; width:20% ">
+        <?php 
+            for($n=0;$n<=0;$n++){     
+        ?>
+                
+        <li style="list-style: none;">
+                <h3><?php echo $cursMatriu[$n][0];?></h3> 
+                <p><?php echo $cursMatriu[$n][1];?></p>
+                <p><?php echo $cursMatriu[$n][2];}?></p>
+        </li></div>
+
+        <div style="border:2px solid black; width:20%">
+        <?php 
+            for($n=1;$n<=1;$n++){ 
+        ?>    
+
+        <li style="list-style: none;">
+            <h3><?php echo $cursMatriu[$n][0];?></h3> 
+            <p><?php echo $cursMatriu[$n][1];?></p>
+            <p><?php echo $cursMatriu[$n][2]; }?></p>
+        </li></div>
+
+
+        <div style="border:2px solid black; width:20%">
+        <?php 
+            for($n=2;$n<=2;$n++){
+        ?>
+                
+        <li style="list-style: none;">
+            <h3><?php echo $cursMatriu[$n][0];?></h3> 
+            <p><?php echo $cursMatriu[$n][1];?></p>
+            <p><?php echo $cursMatriu[$n][2]; }?></p> 
+                
+        </li></div>
+        
+        
+          
+        
+
+            
+               
+    </div>
+
+
     </body>
+
 
     
 </html>
