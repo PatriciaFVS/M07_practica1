@@ -101,17 +101,47 @@
             <p><?php echo $cursMatriu[$n][2]; }?></p> 
                 
         </li></div>
-        
-        
-          
-        
 
+    
+    
+    </div style="border:2px solid black; width:20% ">
+        <?php 
+        //PRÀCTICA 3
+
+        //Creació de l'array buida
+            $taules= array();
             
-               
+        //Primer bucle per afegir valors aleatoris a l'array
+            for($i=0;$i<=9;$i++){
+                array_push($taules, rand(0,5));
+           
+            }
+        //Segon bucle per iterar tota la llista per mostrar
+            for($n=0;$n<=count($taules);$n++){
+                if($taules[$n]==0){
+        ?>          <li> <?php echo "La taula ". $n . " està buida"?> </li>
+                <?php
+                } 
+                else if($taules[$n]==5){
+                ?>  <li>  <?php echo " La taula ". $n ." està plena"?> </li>
+                <?php
+                }
+                else if ($taules[$n]!=5 ||$taules[$n]!=0  ){
+                ?>  <li> <?php echo "La taula " . $n . " té ". $taules[$n] . " comensals"?>      </li>   
+            <?php } }?>
+ 
+    <div>
+      <?php  $habitacions = array (array());
+      
+      //for($i=0;$i<{}
+      
+      ?>
+
     </div>
 
-
     </body>
+
+
 
 
     
